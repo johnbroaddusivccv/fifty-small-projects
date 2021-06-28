@@ -77,3 +77,28 @@ body {
 .circle.active {
   border-color: #3498db;
 }
+
+.btn {
+  background-color: var(--line-border-fill);;
+  color: #fff;
+  border-radius: 6px;;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.90);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background: var(--line-border-empty);
+  cursor: not-allowed;
+}
