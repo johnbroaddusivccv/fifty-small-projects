@@ -13,7 +13,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  background-image: url('https://source.unsplash.com/WLUHO9A_xik/1600x900');
+  /* background-image: url('https://source.unsplash.com/WLUHO9A_xik/1600x900'); */
   background-position: center center;
   background-size: cover;
   transition: 0.4s ease;
@@ -56,13 +56,24 @@ body::before {
 
 .arrow {
   position: fixed;
-  z-index: 100;
   background: transparent;
   padding: 20px;
   font-size: 30px;
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid orange;
+  color: #fff;
+  cursor: pointer;
 }
 
-.left-arrow _;
+.arrow:focus {
+  outline: 0;
+}
+
+.left-arrow {
+  left: calc(15vw - 65px);
+}
+
+.right-arrow {
+  right: calc(15vw - 65px);
+}
